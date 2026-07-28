@@ -2,32 +2,17 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
 // Code blocks in Java
-    // A code block is a group of zero or more statements enclosed in {braces}
-    // Code blocks are used to group statements together and define the scope of variables
-
-    // 2 -- Loop block -- defines a loop body
-    for(int i = 0; i < 10; i++){
-        System.out.println(i);
-    }
-
-
-    // 3 -- Conditional block -- defines conditional statement body
-    int a = 100;
-    if (a > 5){
-        System.out.println("Greater than 5");
-    } else {
-        System.out.println("Less or equal to 5");
-    }
-
-
-    // 4 -- Anonymous block -- groups statements without being associated with any control flow or method.
-    {
-        int b = 10;
-        System.out.println("a is " + a);
-    }
+    // Nesting code blocks -- blocks can be nested within each other and nesting defines scope of variables
 }
-// 1 -- Method block -- defines the body of a method
-public void printMsg(){
-    System.out.println("Hello world");
-    // block is on the bottom because it's declared outside of main
+
+public void exampleMethod(){
+    int outer = 10;
+
+    if (outer > 5){
+        int inner = 20;
+        System.out.println("Inner " + inner);
+        System.out.println("Outer is > 5");
+    }
+
+    System.out.println("Inner " + inner); // error because inner is not in this block's scope
 }
