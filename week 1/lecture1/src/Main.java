@@ -1,14 +1,29 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
-    // 5-String pooling
-    // Strings are immutable and are pooled by default when created using literals(letters)
-    String s1 = "Hello";
-    String s2 = "Hello";
-    System.out.println(s1 == s2); // true -- both point to pooled string
+    // expressions in Java
 
-    String s3 = new String("Hello");
-    System.out.println(s3 == s1); //false -- different objects
+    // 1 - arithmetic
+    int sum = 10 + 5;
+    int product = sum * 2;
 
-    System.out.println(s1.equals(s3)); // true -- compares values of objects
+    // 2 - Relational -- compare two values for true/false
+    boolean isEqual = (10 == 10);
+    boolean isGreater = (10 > 5);
+
+    // 3 - Logical -- combine boolean values using logical operators
+    boolean result = (10 > 5) && (5 < 10);
+
+    // 4 - Assignment -- assign a value to a variable
+    int x = 5;
+    x = x + 2; // 7
+
+    // 5 - Method calls -- calls a method -> returns a value
+    int length = "Hello".length(); // 5
+
+    // Combining expressions:
+    int a = 10;
+    int b = 20;
+    int c = (a + b) * 2; // 60
+    boolean isPositive = (c > 0) && (a < b); // true
 }
