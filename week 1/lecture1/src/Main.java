@@ -1,13 +1,19 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
-    // Primitive data types:
-    byte b = 1; // 8 bit
-    short s = 1000; // 16 bit
-    int i = 42; //32 bit
-    long l = 123456L; // 64 bit
-    float f = 3.14f; // 32 bit
-    double d = 3.14; // 64 bit
-    char c = 'A'; // 16 bit
-    boolean bool = true; // 1 bit
+    // 2-Wrapper classes
+    // used to represent primitives as objects in complex structures
+    int i = 1; // Integer
+    double d = 2.1; // Double
+    char c = 'A'; // Character
+    boolean b = true; // Boolean
+
+    int x = 10;
+    Integer y = Integer.valueOf(x); // Explicit boxing
+    System.out.println(y);
+
+    List<Integer> list = new ArrayList<>();
+    list.add(x); // Autoboxing
+    list.add(y);
+    System.out.println(list);
 }
