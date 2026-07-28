@@ -1,29 +1,67 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
-    // expressions in Java
+    // Statements in Java
+    // 1 - Declaration statements -- declare a variable + optionally initialize it
+    int number;
+    String message = "Hello";
 
-    // 1 - arithmetic
-    int sum = 10 + 5;
-    int product = sum * 2;
+    // 2 - Expression statements -- preform an action like assignment or a method call
+    number = 10;
+    System.out.println(message);
 
-    // 2 - Relational -- compare two values for true/false
-    boolean isEqual = (10 == 10);
-    boolean isGreater = (10 > 5);
+    // 3 - Control flow statements -- controls the order of statement execution
 
-    // 3 - Logical -- combine boolean values using logical operators
-    boolean result = (10 > 5) && (5 < 10);
 
-    // 4 - Assignment -- assign a value to a variable
-    int x = 5;
-    x = x + 2; // 7
+    // 3a - Conditional statements -- execute blocks based on condition
+    if(number > 0){
+        System.out.println("Positive");
+    } else {
+        System.out.println("Non-positive");
+    }
 
-    // 5 - Method calls -- calls a method -> returns a value
-    int length = "Hello".length(); // 5
+    switch (number) {
+        case 1:
+            System.out.println("One");
+        case 2:
+            System.out.println("Two");
+        default:
+            System.out.println("Other num");
+    }
 
-    // Combining expressions:
-    int a = 10;
-    int b = 20;
-    int c = (a + b) * 2; // 60
-    boolean isPositive = (c > 0) && (a < b); // true
+
+    // 3b - Looping statements
+
+    for(int i = 0; i < 10; i++){
+        System.out.println("i is " + i);
+    }
+
+    int i = 0;
+    while (i < 5){
+        System.out.println("i is " + i);
+        i++;
+    }
+
+    i = 0;
+    do {
+        System.out.println("i is " + i);
+        i++;
+    } while (i < 5);
+
+
+    // 3c -- Jump statements -- alter the flow of execution by jumping to another part of the program
+    for(int j=0; j<10; j++){
+        if (j==5){
+            break; // exits loop
+        }
+        if (j % 2 == 0){
+            continue; // skips iteration
+        }
+        System.out.println("i is " + j);
+    }
+}
+
+// 3c -- Jump statements
+public int add(int a, int b){
+    return a + b; // exits the method
 }
