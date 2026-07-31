@@ -1,1 +1,16 @@
-/week2/javafx-sdk-26.0.2
+# JavaFX
+javafx-sdk-*/
+
+# Maven
+target/
+
+# IntelliJ
+.idea/
+*.iml
+out/
+
+# Compiled classes
+*.class
+
+# OS junk
+.DS_Store
