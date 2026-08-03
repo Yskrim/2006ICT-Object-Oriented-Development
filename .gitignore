@@ -14,4 +14,8 @@ out/
 
 # OS junk
 .DS_Store
-week*/.DS_Store
+*/.DS_Store
+
+
+*.pdf
+*.txt
