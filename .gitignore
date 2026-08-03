@@ -1,0 +1,17 @@
+# JavaFX
+javafx-sdk-*/
+
+# Maven
+target/
+
+# IntelliJ
+.idea/
+*.iml
+out/
+
+# Compiled classes
+*.class
+
+# OS junk
+.DS_Store
+week*/.DS_Store
