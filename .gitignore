@@ -15,3 +15,14 @@ out/
 # OS junk
 .DS_Store
 week*/.DS_Store
+
+# Filenames bloating git
+*.pdf
+*.docx
+*.zip
+
+# Foreign cloned repo for the lab3 in week4
+week4/lab4/JavaAnimation
+
+# Has it's own git, doesn't need to be tracked here
+Group-project/
