@@ -44,7 +44,6 @@ public class Main {
         }
     }
 
-    */
 
     // 6. STATIC MEMBERS
     // static members belong to the class, but can be accessed without creating an INSTANCE.
@@ -166,5 +165,5 @@ public class Main {
         rect1.printArea(); // 1
         rect2.printArea(); // 50
     }
-
+    */
 }
